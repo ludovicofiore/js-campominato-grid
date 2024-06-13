@@ -16,13 +16,26 @@ myButton.addEventListener("click",
         const container = document.querySelector(".square-container");
 
         // richiamo funzione per creare elemento
-        const bigSquare = createSomething("div", "big-square");
+        const bigSquare = createElementWClass("div", "big-square");
         console.log(bigSquare);
 
         // porto elemento in pagina
         container.append(bigSquare);
 
+
+
         // creo caselle square
+        // creo ciclo per le 100 caselle
+        for (let i = 0; i < 100; i++) {
+
+            // richiamo funzione per creare elemento
+            const littleSquare = createElementWClass("div", "square");
+            console.log(littleSquare);
+
+            // porto elemento in pagina
+            bigSquare.append(littleSquare);
+        }
+        
     }
 )
 
@@ -33,7 +46,7 @@ myButton.addEventListener("click",
 // FUNZIONI
 
 // funzione per creare elemento html
-function createSomething (tagName, className) {
+function createElementWClass (tagName, className) {
 
     // creo elemento
     const element = document.createElement(tagName);
