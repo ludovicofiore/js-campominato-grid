@@ -57,4 +57,9 @@ main {
     border: 3px solid white;
     width: calc(100% / 10);
     height: calc(100% / 10);
+    cursor: pointer;
+}
+
+.clicked {
+    background-color: aquamarine;
 }

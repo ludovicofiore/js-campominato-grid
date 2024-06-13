@@ -26,18 +26,38 @@ myButton.addEventListener("click",
 
         // creo caselle square
         // creo ciclo per le 100 caselle
-        for (let i = 0; i < 100; i++) {
+        for (let i = 1; i <= 100; i++) {
 
             // richiamo funzione per creare elemento
             const littleSquare = createElementWClass("div", "square");
-            console.log(littleSquare);
+            
 
             // porto elemento in pagina
             bigSquare.append(littleSquare);
+
+
+            // creo click event per quando viene cliccata una casella
+
+            littleSquare.addEventListener("click",
+                function() {
+
+                    // aggiungo classe per cambiare colore 
+                    littleSquare.classList.add("clicked");
+
+                    // mostro il numero della casella
+                    console.log("numero casella: ", i);
+
+                }
+            );
         }
+
         
     }
-)
+);
+
+
+
+
 
 
 
