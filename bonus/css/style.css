@@ -61,9 +61,22 @@ main {
 
 .square {
     border: 3px solid white;
+    cursor: pointer;
+}
+
+.easy-square {
     width: calc(100% / 10);
     height: calc(100% / 10);
-    cursor: pointer;
+}
+
+.mid-square {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+
+.hard-square {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
 }
 
 .clicked {
