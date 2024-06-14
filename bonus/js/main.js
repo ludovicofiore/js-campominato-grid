@@ -25,13 +25,14 @@ myButton.addEventListener("click",
         // richiamo contenitore
         const container = document.querySelector(".square-container");
 
+        // per creare una sola griglia
+        container.innerHTML = '';
+
         // richiamo funzione per creare elemento
         const bigSquare = createElementWClass("div", "big-square");
 
         // porto elemento in pagina
         container.append(bigSquare);
-
-
 
         // creo caselle square
 
