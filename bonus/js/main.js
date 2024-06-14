@@ -49,6 +49,9 @@ myButton.addEventListener("click",
                 // assegno classe difficoltà
                 littleSquare.classList.add("easy-square");
 
+                // scrivo il numero relativo della casella
+                littleSquare.innerHTML = i;
+
                 // porto elemento in pagina
                 bigSquare.append(littleSquare);
 
@@ -78,6 +81,9 @@ myButton.addEventListener("click",
                 // assegno classe difficoltà
                 littleSquare.classList.add("mid-square");
 
+                // scrivo il numero relativo della casella
+                littleSquare.innerHTML = i;
+
                 // porto elemento in pagina
                 bigSquare.append(littleSquare);
 
@@ -106,6 +112,9 @@ myButton.addEventListener("click",
 
                 // assegno classe difficoltà
                 littleSquare.classList.add("hard-square");
+
+                // scrivo il numero relativo della casella
+                littleSquare.innerHTML = i;
 
                 // porto elemento in pagina
                 bigSquare.append(littleSquare);

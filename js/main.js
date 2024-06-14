@@ -8,6 +8,7 @@
 
 let myButton = document.querySelector(".play-button");
 
+
 myButton.addEventListener("click",
     function() {
 
@@ -22,8 +23,6 @@ myButton.addEventListener("click",
         // porto elemento in pagina
         container.append(bigSquare);
 
-
-
         // creo caselle square
         // creo ciclo per le 100 caselle
         for (let i = 1; i <= 100; i++) {
@@ -31,9 +30,11 @@ myButton.addEventListener("click",
             // richiamo funzione per creare elemento
             const littleSquare = createElementWClass("div", "square");
             
-
             // porto elemento in pagina
             bigSquare.append(littleSquare);
+
+            // scrivo il numero relativo della casella
+            littleSquare.innerHTML = i;
 
 
             // creo click event per quando viene cliccata una casella
@@ -44,8 +45,9 @@ myButton.addEventListener("click",
                     // aggiungo classe per cambiare colore 
                     littleSquare.classList.add("clicked");
 
-                    // mostro il numero della casella
+                    // mostro il numero della casella in console
                     console.log("numero casella: ", i);
+                    
 
                 }
             );
@@ -66,7 +68,7 @@ myButton.addEventListener("click",
 // FUNZIONI
 
 // funzione per creare elemento html
-function createElementWClass (tagName, className) {
+function createElementWClass (tagName, className,) {
 
     // creo elemento
     const element = document.createElement(tagName);
